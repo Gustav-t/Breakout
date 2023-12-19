@@ -11,7 +11,7 @@ public class boll : MonoBehaviour
     void Start()
     {
         myRidgidbody = GetComponent<Rigidbody2D>();
-        myRidgidbody.AddForce(new Vector2(0, -100));
+        myRidgidbody.AddForce(new Vector2(0, -275));
     }
 
     // Update is called once per frame

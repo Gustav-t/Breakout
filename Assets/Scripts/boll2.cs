@@ -6,6 +6,9 @@ using UnityEngine;
 public class boll2 : MonoBehaviour
 {
 
+    Rigidbody2D myRidgidbody;
+
+
     int hp = 3;
 
     [SerializeField]
@@ -17,7 +20,8 @@ public class boll2 : MonoBehaviour
         hp -= 1;
         Liv.text = "Liv: " + hp;
 
-        transform.position
+        transform.position = new Vector2(0, 0);
+        myRidgidbody.AddForce(new Vector2(0, 275));
 
         if (hp == 0)
         {
